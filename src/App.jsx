@@ -21,7 +21,7 @@ console.log(loginValue)
     <Navbar/>
       <Routes>
          {loginValue===true && <Route path='/' element={<Home />}/>}
-         {loginValue===false && <Route path='/' element={<Navigate to={'/logout'}/>}/>}
+         {loginValue===false && <Route path='/' element={<Navigate to={'/login'}/>}/>}
           {loginValue===true && <Route path='/cart' element={<Cart/>}/>}
           {loginValue===false && <Route path='/cart' element={<Navigate to={'/login'}/>}/>}
           <Route path='/login' element={<Login/>}/>
